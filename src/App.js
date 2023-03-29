@@ -1,8 +1,11 @@
-import quoteGenerator from "./Quote of the Day/quoteGenerator";
+import QuoteOfTheDay from "./components/QuoteOfTheDay";
 
 function App() {
-	quoteGenerator();
-	return <div className="App"></div>;
+	return (
+		<div className="App">
+			<QuoteOfTheDay />
+		</div>
+	);
 }
 
 export default App;
