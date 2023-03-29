@@ -63,6 +63,10 @@ const quoteGenerator = async () => {
 
 	// Converts quotes into an array of strings
 	const quote = await getQuoteApi();
+	if (quote === "error") {
+		// Checks to see if we got back in error. If we did stop the function and return an error
+		return "error";
+	}
 	let arrQuote = quote.split(" ");
 
 	// Determines if the next word needs to be capitalized
@@ -105,6 +109,7 @@ const quoteGenerator = async () => {
 	const finalQuote = arrQuote.join(" ");
 
 	console.log(finalQuote);
+	return finalQuote;
 };
 
 export default quoteGenerator;
