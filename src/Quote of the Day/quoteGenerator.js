@@ -1,5 +1,4 @@
 import axios from "axios";
-import randomNum from "./randomNum";
 
 const quoteGenerator = async () => {
 	// Generates a new quote of the day for Chihiro. This will be in mostly meows as a joke with some punctuality. This uses a quote of the day api and then replaces the words
