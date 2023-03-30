@@ -1,0 +1,23 @@
+/* Adds a parallax theme to the webpage */
+
+.parallax {
+	/* Full height */
+	height: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax-image-1 {
+	/* The image used */
+	background-image: url("../images/test-image-one.jpg");
+}
+
+@media only screen and (max-device-width: 1366px) {
+	.parallax {
+		background-attachment: scroll;
+	}
+}
