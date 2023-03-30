@@ -8,6 +8,7 @@ const quoteGenerator = async () => {
     Meow, Mow, mow meow.
     */
 
+	// TODO: add max limit for sentence. Example: No longer then 3
 	const whichCatNoise = (word) => {
 		// Takes the first character of the word to determine what cat sound should be made
 		// All cat sounds meow, mow, mrow, mrrr, prr, prrt, hh, mrrrrrrrrrrawr, mew, rrrr, e-e-e-e-e-e, awr, hiiiiiiiiiss, mEEEwr, aaaaaaaaaaaa, Wrrrao, Maaorraa
@@ -66,6 +67,7 @@ const quoteGenerator = async () => {
 		// Checks to see if we got back in error. If we did stop the function and return an error
 		return "error";
 	}
+	console.log(quote);
 	let arrQuote = quote.split(" ");
 
 	// Determines if the next word needs to be capitalized
