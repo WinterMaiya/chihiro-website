@@ -109,7 +109,6 @@ const quoteGenerator = async () => {
 
 	const finalQuote = arrQuote.join(" ");
 
-	console.log(finalQuote);
 	return finalQuote;
 };
 
