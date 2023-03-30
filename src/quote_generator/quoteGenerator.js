@@ -31,7 +31,7 @@ const quoteGenerator = async () => {
 			case "b":
 				return "mrrow";
 			case "d":
-				return "prrr";
+				return "mow";
 			case "h":
 				return "mrrrrrrrrrrawr";
 			case "r":
